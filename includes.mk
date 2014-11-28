@@ -1,5 +1,5 @@
 ifndef DEIS_NUM_INSTANCES
-  DEIS_NUM_INSTANCES = 3
+  DEIS_NUM_INSTANCES = 1
 endif
 
 define echo_cyan
@@ -18,9 +18,9 @@ ifndef BUILD_TAG
   BUILD_TAG = git-$(GIT_SHA)
 endif
 ifndef S3_BUCKET
-  S3_BUCKET = deis-updates
+  S3_BUCKET = baseboxorg-updates
 endif
-IMAGE_PREFIX := deis/
+IMAGE_PREFIX := quay.io/baseboxorg/
 
 check-docker:
 	@if [ -z $$(which docker) ]; then \

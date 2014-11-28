@@ -42,7 +42,7 @@ export DEISCTL_UNITS=${DEISCTL_UNITS:-$DEIS_ROOT/deisctl/units}
 echo "DEISCTL_UNITS=$DEISCTL_UNITS"
 
 # ip address for docker containers to communicate in functional tests
-export HOST_IPADDR=${HOST_IPADDR?}
+export HOST_IPADDR=172.17.8.1
 echo "HOST_IPADDR=$HOST_IPADDR"
 
 # the registry used to host dev-release images
